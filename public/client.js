@@ -26,7 +26,7 @@ try {
             $icon.addClass('fa-4x fas fa-cloud-showers-heavy text-light mb-2');
             break;
         case 'Rain':
-            $icon.addClass('fa-4x fas fa-rain text-light mb-2');
+            $icon.addClass('fa-4x fas fa-cloud-rain text-light mb-2');
             break;
         case 'Snow':
             $icon.addClass('fa-4x fas fa-snowflake text-light mb-2');
