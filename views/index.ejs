@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="icon" type="image/png" href="/favicon.png" />
+      <title>Weather App</title>
+      <meta charset="utf-8">
+    </head>
+    <body>
+      <header class="masthead">
+        <div class="container h-100">
+          <div class="row h-50 align-items-center">
+            <div class="col-12 text-center">
+              <h1 class="font-weight-bold text-light shadowed">What is the weather like outside?</h1>
+              <form>
+                  <div class="col-12">
+                    <input type="text" class="form-control text-center" placeholder="Type your city or ZIP code here..." id="cityField">
+                  </div>
+                  <div class="col mt-5">
+                    <button class="btn btn-light" type="button" id="search">Tell me!</button>
+                  </div>
+              </form>   
+            </div>
+          </div>
+          <div class="row h-10 align-items-center"  id="errorHandler">
+              <div class="col-12">
+                <h3 class="font-weight-bold text-light shadowed text-center">City not found!</h3>
+              </div>
+          </div>
+          <div class="row h-40 align-items-center" id="weatherData">
+            <div class="col-12 text-center mb-5">
+              <h3 class="font-weight-bold text-light shadowed" id="cityName"></h3>
+            </div>
+            <div class="col-sm-3 text-center">
+              <i class="fa-4x fas fa-cloud-rain text-light mb-2" id="weatherIcon"></i>
+              <h3 class="font-weight-bold text-light shadowed" id="weatherType"></h3>
+            </div>
+            <div class="col-sm-3 text-center">
+              <i class="fa-4x fas fa-temperature-low text-light mb-2"></i>
+              <h3 class="font-weight-bold text-light shadowed" id="celsius"></h3>
+            </div>
+            <div class="col-sm-3 text-center">
+              <i class="fa-4x fas fa-wind text-light mb-2"></i>
+              <h3 class="font-weight-bold text-light shadowed" id="wind"></h3>
+            </div>
+            <div class="col-sm-3 text-center mb-2">
+                <i class="fa-4x fas fa-water text-light"></i>
+                <h3 class="font-weight-bold text-light shadowed" id="humidity"></h3>
+            </div>
+          </div>
+        </div>
+      </header>
+      <footer>
+        <div id="sticky-footer" class="py-4 text-center fixed-bottom col-12">
+          <div class="col-sm-12 text-left">
+            <a href="https://github.com/Miggoh/openWeatherApp"><i class="fa-2x fab fa-github text-muted"></i></a>
+          </div>    
+          <div class="col-sm-12">
+            <a href="https://openweathermap.org" class="text-muted">Powered by OpenWeatherMap</a>
+          </div>
+        </div>
+      </footer>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+	    <link href="/style.css" type="text/css" rel="stylesheet">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.bundle.min.js" integrity="sha384-VoPFvGr9GxhDT3n8vqqZ46twP5lgex+raTCfICQy73NLhN7ZqSfCtfSn4mLA2EFA" crossorigin="anonymous"></script>
+      <script src="/client.js"></script>
+    </body>
+</html>

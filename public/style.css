@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
   } 
-h1 {
+.shadowed {
     text-shadow: 4px 4px #000000ab;
 }
 

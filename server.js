@@ -9,13 +9,15 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.render("index.ejs");
 });
 
-app.post("/", (req, res) => {
+app.post("/", async (req, res) => {
     let clientInput = JSON.parse(JSON.stringify(req.body));
     const city = Object.keys(clientInput)[0];
-    weather(city);
+    let weatherData = await weather(city);
+    console.log(weatherData);
+    await res.send(weatherData)
 })
 
 console.log("Listening port " + PORT);
