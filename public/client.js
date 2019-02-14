@@ -31,7 +31,7 @@ try {
         case 'Snow':
             $icon.addClass('fa-4x fas fa-snowflake text-light mb-2');
             break;
-        case 'Atmosphere':
+        case 'Mist':
             $icon.addClass('fa-4x fas fa-smog text-light mb-2');
             break;
         case 'Clear':
