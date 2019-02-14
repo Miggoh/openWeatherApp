@@ -14,10 +14,12 @@ app.get("/", (req, res) => {
 
 app.post("/", async (req, res) => {
     let clientInput = JSON.parse(JSON.stringify(req.body));
-    const city = Object.keys(clientInput)[0];
+    //console.log(clientInput);
+    const city = clientInput.city;
+    //console.log(city);
     let weatherData = await weather(city);
-    console.log(weatherData);
-    await res.send(weatherData)
+    //console.log(weatherData);
+    await res.send(weatherData);
 })
 
 console.log("Listening port " + PORT);

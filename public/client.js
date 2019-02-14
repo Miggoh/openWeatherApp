@@ -54,12 +54,11 @@ catch (err) {
 const executeSearch = () => {
     $weatherElement.hide();
     $error.hide();
-    const city = $input.val();
     $.ajax({
         type: "POST",
         url: "/",
-        data: `${city}`,
-        dataType: "application/x-www-form-urlencoded",
+        data: $input.serialize(),
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
         success: console.log("Data was sent to server!"),
         complete: (data) => {
             const weatherData = JSON.parse(data.responseText);
