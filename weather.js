@@ -7,7 +7,7 @@ const weather = async (city) => {
 //node-fetch doesn't (apparently) automatically encode url so you need the "new URL"
     const myUrl = new URL(`${ROOT_URL}?q=${city}&APPID=${API_KEY}&units=metric`);
     const response = await fetch (myUrl);
-    const json = await response.json()
+    const json = await response.json();
     return json
 };
 

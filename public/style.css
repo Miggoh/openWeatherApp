@@ -11,7 +11,7 @@
 }
 
 #sticky-footer {
-    flex-shrink: none;
+    flex-shrink: 0;
   }
 
   @media (min-width:1025px) {

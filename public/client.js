@@ -1,8 +1,8 @@
 const $input = $('#cityField');
 const $submit = $('#search');
 const $weatherElement = $('#weatherData');
-const $icon = $('#weatherIcon')
-const $error = $('#errorHandler')
+const $icon = $('#weatherIcon');
+const $error = $('#errorHandler');
 
 //Hiding the HTML template before a search is made:
 $weatherElement.hide();
@@ -43,11 +43,11 @@ try {
         default:
             $icon.addClass('fa-4x fas fa-poo-storm text-light mb-2');   
     };
-    $weatherElement.fadeIn(1200)
+    $weatherElement.fadeIn(1200);
     $input.val('');
     }
 catch (err) {
-    $error.fadeIn(1200)
+    $error.fadeIn(1200);
     $input.val('');
     }
 };
@@ -74,7 +74,7 @@ const executeSearch = () => {
 //Preventing 'enter' from refreshing the page when used to submit form:
 $input.keypress(function(event) {
     if (event.keyCode == '13') {
-        event.preventDefault()
+        event.preventDefault();
         executeSearch();
     }
  });
