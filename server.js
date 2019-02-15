@@ -13,9 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", async (req, res) => {
-    let clientInput = JSON.parse(JSON.stringify(req.body));
-    //console.log(clientInput);
-    const city = clientInput.city;
+    const city = req.body.city;
     //console.log(city);
     let weatherData = await weather(city);
     //console.log(weatherData);
