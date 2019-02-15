@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 app.post("/", async (req, res) => {
     const city = req.body.city;
-    //console.log(city);
+    //Check weather.js for the weather function!
     let weatherData = await weather(city);
     //console.log(weatherData);
     await res.send(weatherData);
