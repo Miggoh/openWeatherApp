@@ -44,9 +44,11 @@ try {
             $icon.addClass('fa-4x fas fa-poo-storm text-light mb-2');   
     };
     $weatherElement.fadeIn(1200)
+    $input.val('');
     }
 catch (err) {
     $error.fadeIn(1200)
+    $input.val('');
     }
 };
 
