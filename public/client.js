@@ -65,7 +65,7 @@ const executeSearch = () => {
         complete: (data) => {
             const weatherData = JSON.parse(data.responseText);
             console.log("Server responded!");
-            //console.log(weatherData);
+            console.log(weatherData);
             renderWeather(weatherData);
         }
       });
